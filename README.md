@@ -12,7 +12,6 @@ This repository provides a lightweight inference implementation optimized for **
 - ✅ Image-to-Image Search
 - ✅ Text-to-Text Search
 - ✅ Image-to-Text Search
-(On-device processing: No internet connection required)
 
 ## Requirements
 
@@ -25,7 +24,11 @@ This repository provides a lightweight inference implementation optimized for **
 
 The project utilizes the ONNX version of the [siglip2-base-patch16-224](https://huggingface.co/onnx-community/siglip2-base-patch16-224-ONNX) model. It requires both the text encoder and the vision encoder to compute embeddings for multi-modal tasks.
 
-### 2. Embedding Database
+### 2. Tokenizer
+
+Text input processing is handled by the **Google SentencePieceTokenizer**, implemented using the `Microsoft.ML.Tokenizers` library. This ensures that text queries are correctly tokenized and encoded to match the SigLIP2 model's expected input format.
+
+### 3. Embedding Database
 
 The system generates a local database (`image_embeddings.bin`) by processing images located in the StreamingAssets folder. This allows for real-time similarity search during runtime.
 
