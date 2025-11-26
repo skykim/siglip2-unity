@@ -40,6 +40,7 @@ The system generates a local database (`image_embeddings.bin`) by processing ima
 
 - Clone or download this repository
 - Unzip the provided [StreamingAssets.zip](https://drive.google.com/file/d/13tnfjXqXM_uT12dPYuq4UhHOawbOwwvg/view?usp=sharing) file
+  - *Note: The demo images included in this zip are sourced from the [Fashion Product Images (Small)](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small) dataset.*
 - Place the unzipped contents into the `/Assets/StreamingAssets` directory
 - *Ensure that your .jpg or .png files are located inside `/Assets/StreamingAssets/Images`*
 
@@ -65,6 +66,7 @@ Experience SigLIP2 in Unity in action! Check out our demo showcasing the retriev
 
 - [Google SigLIP2](https://arxiv.org/abs/2502.14786)
 - [Onnx Community: SigLIP2-Base-Patch16-224](https://huggingface.co/onnx-community/siglip2-base-patch16-224-ONNX)
+- [Dataset: Fashion Product Images (Small)](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small)
 - [Unity Sentis Documentation](https://docs.unity3d.com/Packages/com.unity.ai.inference@latest)
 
 ## License
