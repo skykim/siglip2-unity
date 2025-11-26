@@ -4,7 +4,7 @@ On-device Multi-modal Retrieval: SigLIP2 in Unity Sentis
 
 ## Overview
 
-This repository provides a lightweight inference implementation optimized for **SigLIP2** (specifically `siglip2-base-patch16-224`) using **Unity Sentis**. This project enables powerful multi-modal retrieval tasks directly within Unity, allowing for semantic search across text and images without requiring an internet connection.
+This repository provides a lightweight inference implementation optimized for **SigLIP2** (specifically `siglip2-base-patch16-224`) using **Unity Sentis**. This project enables powerful multi-modal retrieval tasks directly within Unity, allowing for smart asset search and semantic retrieval across text and images without requiring an internet connection.
 
 ## Features
 
