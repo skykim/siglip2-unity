@@ -110,7 +110,7 @@ public class ModelSigLIP2 : MonoBehaviour
         using Tensor<float> inputTensor = TextureConverter.ToTensor(image, IMAGE_WIDTH, IMAGE_HEIGHT, CHANNELS);
         _imageEngine.SetInput("pixel_values", inputTensor);
         _imageEngine.Schedule();
-        var output = _imageEngine.PeekOutput() as Tensor<float>;
+        var output = _imageEngine.PeekOutput("pooler_output") as Tensor<float>;
         return output.ReadbackAndClone();
     }
     
@@ -124,7 +124,7 @@ public class ModelSigLIP2 : MonoBehaviour
         using var inputIdsTensor = new Tensor<int>(shape, finalTokenIds);
         _textEngine.SetInput("input_ids", inputIdsTensor);
         _textEngine.Schedule();
-        var output = _textEngine.PeekOutput() as Tensor<float>;
+        var output = _textEngine.PeekOutput("pooler_output") as Tensor<float>;
         return output.ReadbackAndClone();
     }
     
